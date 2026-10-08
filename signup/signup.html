@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập / Đăng Ký - Netflix & Chill</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body class="auth-body">
+    <!-- Navbar Header -->
+    <header>
+      <nav class="navbar">
+        <a href="../index.html" class="navbar__brand">
+          Netflix <span>& Chill</span>
+        </a>
+        <a href="../index.html" class="navbar__link">&larr; Quay lại Trang Chủ</a>
+      </nav>
+    </header>
+
+    <!-- Sign up / Sign in Form Container -->
+    <main class="auth-container">
+      <div class="auth-card">
+        <h1 class="auth-title">Đăng Nhập</h1>
+        <form class="auth-form" onsubmit="event.preventDefault(); alert('Đăng nhập thành công!'); window.location.href='../index.html';">
+          <div class="form-group">
+            <label for="email" class="form-label">Email hoặc Số điện thoại</label>
+            <input type="text" id="email" class="form-input" placeholder="Nhập email hoặc SĐT..." required />
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="password" id="password" class="form-input" placeholder="Nhập mật khẩu..." required />
+          </div>
+          <button type="submit" class="btn-primary auth-submit-btn">Đăng Nhập</button>
+          <div class="auth-options">
+            <label class="remember-me">
+              <input type="checkbox" checked /> Ghi nhớ tài khoản
+            </label>
+            <a href="#" class="forgot-pwd">Bạn cần trợ giúp?</a>
+          </div>
+        </form>
+        <div class="auth-footer">
+          <p>Bạn mới tham gia Netflix & Chill? <a href="#" class="signup-now">Đăng ký ngay bây giờ</a>.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
